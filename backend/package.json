@@ -1,0 +1,14 @@
+{
+  "name": "my-peerjs-app",
+  "version": "1.0.0",
+  "description": "A simple PeerJS app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js -h 0.0.0.0"
+  },
+  "dependencies": {
+    "peer": "^1.0.2",
+    "peerjs": "^1.5.5"
+  }
+}
