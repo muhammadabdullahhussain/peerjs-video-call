@@ -8,12 +8,12 @@ function VideoChat() {
   const [myId, setMyId] = useState("");
 
   useEffect(() => {
-    const peer = new Peer(undefined, {
-      host: "192.168.1.22", // 👈 your local IP
-      port: 9000,
-      path: "/myapp",
-      secure: false, // 👈 local test
-    });
+const peer = new Peer(undefined, {
+  host: "peerjs-backend-88uw2yjtz.vercel.app",
+  path: "/myapp",
+  secure: true,
+  port: 443,
+});
 
     peerRef.current = peer;
 
@@ -80,3 +80,4 @@ function VideoChat() {
 }
 
 export default VideoChat;
+
